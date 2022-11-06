@@ -4,6 +4,7 @@ import re
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import stopwords
+from waitress import serve
 
 
 app = Flask(__name__)
@@ -57,9 +58,14 @@ def predict():
     return render_template('predictor.html', prediction_text='Detection: {}'.format(output))
 
 
-if __name__=="__main__":
-    # For local development:
-    # app.run(debug=True)
-    # For public web serving:
-    app.run(host='0.0.0.0')
+# if __name__=="__main__":
+#     # For local development:
+#     # app.run(debug=True)
+#     # For public web serving:
+#     app.run(host='0.0.0.0')
+#     app.run()
+
+if __name__ == "__main__":
+    # serve(app, host="0.0.0.0", port=8855)
+    app.debug=True
     app.run()
