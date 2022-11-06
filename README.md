@@ -21,3 +21,9 @@ Performance Evaluation & Reporting
 Model Deployment
 
 Model Inference
+
+
+#### Deployment
+
+
+![Screenshot from 2022-11-06 10-07-11](https://user-images.githubusercontent.com/86875309/200162835-b1f47caf-305e-4c3d-8897-fc336a9a2424.png)
