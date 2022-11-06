@@ -10,8 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-
   <style>
     body{
       background-size: auto;
@@ -20,12 +18,15 @@
       background-size: 20%;
       background-attachment: inherit;
       background-repeat: no-repeat, no-repeat;
-      background-color: skyblue;
+      background-color: orange;
       font-family: 'Work Sans', sans-serif;
     }
-    h1 { color: rebeccapurple; }
+    h1 { color: Blue; }
 
   </style>
+
+<body>
+
 
   <div id="example1" class="limiter">
     <div class="container-table100">
@@ -33,6 +34,10 @@
         <div class="table100">
           <div style="max-width:25%; margin-left: auto; margin-right: auto;">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   
   <div class="login" align="center">
@@ -45,7 +50,7 @@
     <br>
     <br>
     <br>
-    <form action="{{ url_for('predict')}}"method="post">
+    <form action="{{ url_for('predict')}}" method="post">
 
         <input type="text" name="Input"  placeholder="Enter tweet text here"  size="80"  required="required" /><p>
           <br>
@@ -67,11 +72,6 @@
       <p>Built by <a href="https://myProfile">Mohamed & Fatima</a></p>
       </div> 
   </div>
-  
-  
-  
-  
-  
 
 </body>
 </html>
